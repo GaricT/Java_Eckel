@@ -1,8 +1,9 @@
 package com.garict;
+import java.util.*;
 
 class tstclass01 {
     int fI;
-    char fTxt;
+    String fTxt;
 }
 
 public class less_ch02 {
