@@ -1,3 +1,4 @@
+// Для запуска в командной строке - закомментировать package
 package com.garict;
 import java.util.*;
 
@@ -40,13 +41,24 @@ public class less_ch02 {
         System.out.println("StatCls02.i  = " + StatCls02.i);
 */
 // Упражнение 9
+/*
         int     vInt01 = 3;
         Integer vInt02 = new Integer(4);
         int     vInt03 = vInt02;
         vInt02 = vInt02 + vInt01;
         System.out.println(vInt01);
         System.out.println(vInt03);
+*/
+// Упраженение 10
+        // Нумерация идет от 0, узнать сколько передано параметров можно через args.length
+        if (args.length > 0 ){
+            System.out.println("Первый параметр: " + args[0]);
+        }
+        else {
+            System.out.println("Нет параметров командной строки");
+        }
 
+//        System.out.println(args[0]);
     }
 
 }

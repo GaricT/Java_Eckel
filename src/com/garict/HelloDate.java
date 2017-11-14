@@ -1,3 +1,4 @@
+// Для запуска в командной строке - закомментировать package
 package com.garict;
 import java.util.*;
 
