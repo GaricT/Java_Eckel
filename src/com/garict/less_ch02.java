@@ -23,6 +23,7 @@ public class less_ch02 {
         System.out.println(StaticTest.i);
 */
 // Упражнение 8
+/*
         // Порождаем новые объект класса StaticTest
         StaticTest StatCls = new StaticTest();
         // Присваиваем статическому полю новое значени, теперь 49 будет как в StatCls.i так и в StaticTest.i
@@ -37,7 +38,15 @@ public class less_ch02 {
         System.out.println("StaticTest.i = " + StaticTest.i);
         System.out.println("StatCls.i    = " + StatCls.i);
         System.out.println("StatCls02.i  = " + StatCls02.i);
-//
+*/
+// Упражнение 9
+        int     vInt01 = 3;
+        Integer vInt02 = new Integer(4);
+        int     vInt03 = vInt02;
+        vInt02 = vInt02 + vInt01;
+        System.out.println(vInt01);
+        System.out.println(vInt03);
+
     }
 
 }
