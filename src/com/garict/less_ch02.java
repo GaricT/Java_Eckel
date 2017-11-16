@@ -50,6 +50,7 @@ public class less_ch02 {
         System.out.println(vInt03);
 */
 // Упраженение 10
+/*
         // Нумерация идет от 0, узнать сколько передано параметров можно через args.length
         if (args.length > 0 ){
             System.out.println("Первый параметр: " + args[0]);
@@ -57,8 +58,8 @@ public class less_ch02 {
         else {
             System.out.println("Нет параметров командной строки");
         }
-
-//        System.out.println(args[0]);
+*/
+// Упражнение 11
     }
 
 }
