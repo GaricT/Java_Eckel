@@ -60,7 +60,14 @@ public class less_ch02 {
         }
 */
 // Упражнение 11
-    }
+        AllTheColorsOfTheRainbow NewPalette = new AllTheColorsOfTheRainbow();
+        System.out.println("Текущий оттенок: " + NewPalette.getAnIntegerRepresentingColors());
+        NewPalette.changeTheHueOfTheColor(4);
+        System.out.println("Текущий оттенок: " + NewPalette.getAnIntegerRepresentingColors());
+        NewPalette.changeTheHueOfTheColor(4);
+        System.out.println("Текущий оттенок: " + NewPalette.getAnIntegerRepresentingColors());
+        NewPalette.changeTheHueOfTheColor(3);
+    } /* public static void main (String[] args) */
 
 }
 
@@ -71,4 +78,20 @@ class StaticTest {
 
 class Incrementable {
     static void increment () {StaticTest.i++;}
+}
+
+class AllTheColorsOfTheRainbow{
+    private int anIntegerRepresentingColors;
+    void changeTheHueOfTheColor(int newHue){
+        if (anIntegerRepresentingColors == newHue){
+            System.out.println("Оттенок уже установлен, укажите другой");
+        }
+        else {
+            System.out.println("Оттенок изменен");
+            anIntegerRepresentingColors = newHue;
+        }
+    } /* void changeTheHueOfTheColor(int newHue) */
+    int getAnIntegerRepresentingColors (){
+        return anIntegerRepresentingColors;
+    }
 }
