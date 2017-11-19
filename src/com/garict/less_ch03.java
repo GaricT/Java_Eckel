@@ -1,5 +1,7 @@
 package com.garict;
 
+import java.util.Random;
+
 //=================================================================
 class LessOne{
     float fFloat;
@@ -65,6 +67,25 @@ class Dog{
 } /* class Dog{ */
 //=================================================================
 
+class Coin{
+    public static void fThrow(){
+        Random side = new Random();
+        int i = Integer.max(1, side.nextInt(100));
+/*
+        System.out.println("i: " + i);
+        System.out.println("i % 2 : " + ( i % 2) );
+*/
+
+        if ((i % 2) == 0 ){
+            System.out.println("Орел");
+        }
+        else {
+            System.out.println("Решка");
+        }
+
+    } /* public static void fThrow(){ */
+} /* class Coin{ */
+//=================================================================
 
 public class less_ch03 {
     public static void main(String[] args){
@@ -105,6 +126,8 @@ public class less_ch03 {
         LineMove.fPeriod(120f, 85f);
         LineMove.fPrnRes();
 */
+
+/*
         // Упраженение 5
         Dog MyDog01  = new Dog();
         Dog MyDog02  = new Dog();
@@ -138,7 +161,13 @@ public class less_ch03 {
         System.out.println("MyDog01.name == HellsDog.name     : " + (MyDog01.name == HellsDog.name));
         System.out.println("MyDog01.equals(HellsDog)          : " + MyDog01.equals(HellsDog));
         System.out.println("MyDog01.says.equals(HellsDog.says): " + MyDog01.name.equals(HellsDog.name));
-
+*/
+        // Упражнение 7
+        Coin.fThrow();
+        Coin.fThrow();
+        Coin.fThrow();
+        Coin.fThrow();
+        Coin.fThrow();
 
 
 
