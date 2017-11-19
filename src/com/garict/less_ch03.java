@@ -30,13 +30,15 @@ public class less_ch03 {
         objLOne02.fFloat = 88.22f;
         System.out.println("3: " + objLOne01.fFloat + " : " + objLOne02.fFloat);
 */
+/*
         // Упраженение 3
         LessOne objFloat = new LessOne();
         objFloat.fFloat = 3.3f;
         System.out.println("1. fFloat = " + objFloat.fFloat);
         Assign.fFloat(objFloat);
         System.out.println("2. fFloat = " + objFloat.fFloat);
-
+*/
+        // Упражнение 4
     }
 
 }
