@@ -9,6 +9,49 @@ class Assign{
         y.fFloat = 9.9f;
     }
 }
+// Класс для расчетов параметров для равномерного, линейного движения
+class LineMove{
+    // Результат вычислений
+    private static float res;
+
+    // Метод вывода результата
+    static void fPrnRes(){
+
+        System.out.println("Результат: " + res);
+
+    } /* static void fPrnRes(){ */
+
+    // Метод вычисления скорости
+    static void fSpeed(float dist, float period){
+        if (period == 0){
+            res = 0;
+            System.out.println("Деление на ноль не возможно.");
+        }
+        else {
+            res =  dist / period;
+        }
+    } /* static void fSpeed(float dist, float period){ */
+
+    // Метод вычисления пути
+    static void fDist(float speed, float period){
+
+        res = speed * period;
+
+    } /* static void fDist(float speed, float period){ */
+
+    // Вычисление времени движения
+    static void fPeriod(float dist, float speed){
+
+        if (speed == 0){
+            res = 0;
+            System.out.println("Деление на ноль не возможно.");
+        }
+        else {
+            res =  dist / speed;
+        }
+
+    } /* static void fPeriod(float dist, float speed){ */
+}
 
 public class less_ch03 {
     public static void main(String[] args){
@@ -39,6 +82,7 @@ public class less_ch03 {
         System.out.println("2. fFloat = " + objFloat.fFloat);
 */
         // Упражнение 4
+
     }
 
 }
