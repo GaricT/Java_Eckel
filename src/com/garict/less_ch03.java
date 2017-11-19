@@ -82,7 +82,14 @@ public class less_ch03 {
         System.out.println("2. fFloat = " + objFloat.fFloat);
 */
         // Упражнение 4
-
+        LineMove.fDist(20f, 1.5f);
+        LineMove.fPrnRes();
+        LineMove.fDist(60f, 1f);
+        LineMove.fPrnRes();
+        LineMove.fSpeed(120f, 0.5f);
+        LineMove.fPrnRes();
+        LineMove.fPeriod(120f, 85f);
+        LineMove.fPrnRes();
     }
 
 }
