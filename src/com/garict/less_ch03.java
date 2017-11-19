@@ -170,6 +170,7 @@ public class less_ch03 {
         Coin.fThrow();
         Coin.fThrow();
 */
+/*
         // Упражнение 8
         long vVal = 16L;
         System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
@@ -177,7 +178,20 @@ public class less_ch03 {
         System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
         vVal = 0x0EL;
         System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
+*/
+        // Упражнение 9
+        float  vValF = 1f;
+        double vValD = 1d;
 
+        vValF = Float.MAX_VALUE;
+        System.out.println("MAX float: " + vValF);
+        vValF = Float.MIN_VALUE;
+        System.out.println("MIN float: " + vValF);
+
+        vValD = Double.MAX_VALUE;
+        System.out.println("MAX double: " + vValD);
+        vValD = Double.MIN_VALUE;
+        System.out.println("MIN double: " + vValD);
 
 
     }
