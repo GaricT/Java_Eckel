@@ -106,14 +106,41 @@ public class less_ch03 {
         LineMove.fPrnRes();
 */
         // Упраженение 5
-        Dog MyDog01 = new Dog();
-        Dog MyDog02 = new Dog();
+        Dog MyDog01  = new Dog();
+        Dog MyDog02  = new Dog();
         MyDog01.name = "Бобик";
         MyDog01.says = "Гав";
         MyDog02.name = "Тобик";
         MyDog02.says = "Тяф-тяф";
-        System.out.println(MyDog01.name + ":" + MyDog01.says);
-        System.out.println(MyDog02.name + ":" + MyDog02.says);
+
+        System.out.println("1. " + MyDog01.name + ":" + MyDog01.says);
+        System.out.println("2. " + MyDog02.name + ":" + MyDog02.says);
+
+        // Упражение 6
+        Dog HellsDog  = new Dog();
+
+        MyDog01.says = HellsDog.says = "МрМур!";
+        MyDog01.name = HellsDog.name = "Кот";
+
+        System.out.println("3. " + MyDog01.says + ":" + HellsDog.says);
+        System.out.println("MyDog01.name == HellsDog.name     : " + (MyDog01.name == HellsDog.name));
+        System.out.println("MyDog01.says == HellsDog.says     : " + (MyDog01.says == HellsDog.says));
+        System.out.println("MyDog01.name.equals(HellsDog.name): " + MyDog01.name.equals(HellsDog.name));
+        System.out.println("MyDog01.says.equals(HellsDog.says): " + MyDog01.says.equals(HellsDog.says));
+        System.out.println("MyDog01.equals(HellsDog)          : " + MyDog01.equals(HellsDog));
+
+        HellsDog.name = "Лютик";
+        HellsDog.says = "Заходи на огонёк";
+
+
+        MyDog01 = HellsDog;
+        System.out.println("4. " + MyDog01.name + ":" + MyDog01.says);
+        System.out.println("MyDog01.name == HellsDog.name     : " + (MyDog01.name == HellsDog.name));
+        System.out.println("MyDog01.equals(HellsDog)          : " + MyDog01.equals(HellsDog));
+        System.out.println("MyDog01.says.equals(HellsDog.says): " + MyDog01.name.equals(HellsDog.name));
+
+
+
 
 
     }
