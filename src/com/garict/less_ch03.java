@@ -1,14 +1,18 @@
 package com.garict;
 
+//=================================================================
 class LessOne{
     float fFloat;
-}
+} /* class LessOne{ */
+//=================================================================
 
 class Assign{
     static void fFloat(LessOne y){
         y.fFloat = 9.9f;
     }
-}
+} /* class Assign{ */
+//=================================================================
+
 // Класс для расчетов параметров для равномерного, линейного движения
 class LineMove{
     // Результат вычислений
@@ -51,7 +55,16 @@ class LineMove{
         }
 
     } /* static void fPeriod(float dist, float speed){ */
-}
+} /* class LineMove{ */
+//=================================================================
+
+class Dog{
+    String name;
+    String says;
+
+} /* class Dog{ */
+//=================================================================
+
 
 public class less_ch03 {
     public static void main(String[] args){
@@ -81,6 +94,7 @@ public class less_ch03 {
         Assign.fFloat(objFloat);
         System.out.println("2. fFloat = " + objFloat.fFloat);
 */
+/*
         // Упражнение 4
         LineMove.fDist(20f, 1.5f);
         LineMove.fPrnRes();
@@ -90,6 +104,18 @@ public class less_ch03 {
         LineMove.fPrnRes();
         LineMove.fPeriod(120f, 85f);
         LineMove.fPrnRes();
+*/
+        // Упраженение 5
+        Dog MyDog01 = new Dog();
+        Dog MyDog02 = new Dog();
+        MyDog01.name = "Бобик";
+        MyDog01.says = "Гав";
+        MyDog02.name = "Тобик";
+        MyDog02.says = "Тяф-тяф";
+        System.out.println(MyDog01.name + ":" + MyDog01.says);
+        System.out.println(MyDog02.name + ":" + MyDog02.says);
+
+
     }
 
 }
