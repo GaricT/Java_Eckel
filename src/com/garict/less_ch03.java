@@ -162,13 +162,21 @@ public class less_ch03 {
         System.out.println("MyDog01.equals(HellsDog)          : " + MyDog01.equals(HellsDog));
         System.out.println("MyDog01.says.equals(HellsDog.says): " + MyDog01.name.equals(HellsDog.name));
 */
+/*
         // Упражнение 7
         Coin.fThrow();
         Coin.fThrow();
         Coin.fThrow();
         Coin.fThrow();
         Coin.fThrow();
-
+*/
+        // Упражнение 8
+        long vVal = 16L;
+        System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
+        vVal = 017L;
+        System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
+        vVal = 0x0EL;
+        System.out.println("DEC " + vVal + " : " + Long.toBinaryString(vVal));
 
 
 
