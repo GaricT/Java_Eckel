@@ -194,6 +194,7 @@ public class less_ch03 {
         vValD = Double.MIN_VALUE;
         System.out.println("MIN double: " + vValD);
 */
+/*
         // Упражнение 10
         long f1 = 0xAA;
         long f2 = 0x55;
@@ -203,7 +204,13 @@ public class less_ch03 {
         System.out.println("|: " + Long.toBinaryString(f1 | f2));
         System.out.println("|: " + Long.toBinaryString(f1 ^ f2));
         System.out.println("|: " + Long.toBinaryString(~f2));
-
+*/
+        // Упражнение 11
+        int f = 0x1fff;
+        System.out.println("1: " + Integer.toBinaryString(f ));
+        f <<= 18;
+        System.out.println("2: " + Integer.toBinaryString(f));
+        System.out.println("3: " + f);
 
     }
 
