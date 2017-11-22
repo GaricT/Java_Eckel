@@ -205,12 +205,22 @@ public class less_ch03 {
         System.out.println("|: " + Long.toBinaryString(f1 ^ f2));
         System.out.println("|: " + Long.toBinaryString(~f2));
 */
+/*
         // Упражнение 11
         int f = 0x1fff;
         System.out.println("1: " + Integer.toBinaryString(f ));
         f <<= 18;
         System.out.println("2: " + Integer.toBinaryString(f));
         System.out.println("3: " + f);
+*/
+        // Упражнение 12
+        int f = 0xffff;
+        System.out.println(f + " : " + Integer.toBinaryString(f));
+        f <<= 31;
+        System.out.println(f + " : " + Integer.toBinaryString(f));
+        System.out.println(f + " >>> 21 = " + Integer.toBinaryString(f >>> 21));
+        System.out.println(f + " >>  21 = " + Integer.toBinaryString(f >> 21));
+
 
     }
 
