@@ -213,6 +213,7 @@ public class less_ch03 {
         System.out.println("2: " + Integer.toBinaryString(f));
         System.out.println("3: " + f);
 */
+/*
         // Упражнение 12
         int f = 0xffff;
         System.out.println(f + " : " + Integer.toBinaryString(f));
@@ -220,7 +221,18 @@ public class less_ch03 {
         System.out.println(f + " : " + Integer.toBinaryString(f));
         System.out.println(f + " >>> 21 = " + Integer.toBinaryString(f >>> 21));
         System.out.println(f + " >>  21 = " + Integer.toBinaryString(f >> 21));
-
+*/
+        // Упражнение 13
+        char vStr = 'A';
+        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        // 65 числовой код 'A' что в ASCII, что в UTF-8
+        System.out.println( "65:" +  Integer.toBinaryString(65));
+        vStr = 'a';
+        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        vStr = 'B';
+        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        vStr = 'b';
+        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
 
     }
 
