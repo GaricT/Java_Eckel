@@ -226,13 +226,17 @@ public class less_ch03 {
         char vStr = 'A';
         System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
         // 65 числовой код 'A' что в ASCII, что в UTF-8
-        System.out.println( "65:" +  Integer.toBinaryString(65));
-        vStr = 'a';
-        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        System.out.println( (int)vStr + ":" +  Integer.toBinaryString((int)vStr));
         vStr = 'B';
         System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        System.out.println( (int)vStr + ":" +  Integer.toBinaryString((int)vStr));
+
+        vStr = 'a';
+        System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        System.out.println( (int)vStr + ":" +  Integer.toBinaryString((int)vStr));
         vStr = 'b';
         System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
+        System.out.println( (int)vStr + ":" +  Integer.toBinaryString((int)vStr));
 
     }
 
