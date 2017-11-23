@@ -88,6 +88,22 @@ class Coin{
 //=================================================================
 
 public class less_ch03 {
+    static void f(boolean b){}
+    static void StrLog (String iStr1, String iStr2){
+        int i = iStr1.compareTo(iStr2);
+
+        System.out.println("iStr1 : " + iStr1);
+        System.out.println("iStr2 : " + iStr2);
+        System.out.println("");
+        System.out.println("iStr1 > iStr2       = " + (i > 0 ? "yes" : "no"));
+        System.out.println("iStr1 < iStr2       = " + (i < 0 ? "yes" : "no"));
+        System.out.println("iStr1 = iStr2       = " + (i == 0 ? "yes" : "no"));
+        System.out.println("");
+        System.out.println("iStr1 == iStr2      = " + (iStr1 == iStr2));
+        System.out.println("iStr1 != iStr2      = " + (iStr1 != iStr2));
+        System.out.println("");
+        System.out.println("iStr1.equals(iStr2) = " + iStr1.equals(iStr2));
+    }
     public static void main(String[] args){
 /*
         // Упражнение 2
@@ -222,6 +238,7 @@ public class less_ch03 {
         System.out.println(f + " >>> 21 = " + Integer.toBinaryString(f >>> 21));
         System.out.println(f + " >>  21 = " + Integer.toBinaryString(f >> 21));
 */
+/*
         // Упражнение 13
         char vStr = 'A';
         System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
@@ -237,7 +254,20 @@ public class less_ch03 {
         vStr = 'b';
         System.out.println( vStr + " :" +  Integer.toBinaryString(vStr));
         System.out.println( (int)vStr + ":" +  Integer.toBinaryString((int)vStr));
+*/
+        // Упражнение 14
+        String Str1 = new String("test");
+        String Str2 = new String("test");
 
+        System.out.println("Присваивание через: new String(\"\")");
+        StrLog(Str1, Str2);
+
+        // Java и указатели, это нечто...
+        System.out.println("");
+        System.out.println("Прямое присваивание: Str1 = \"test\"; Str2 = \"test \";");
+        Str1 = "test";
+        Str2 = "test";
+        StrLog(Str1, Str2);
     }
 
 }
